@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+    background-color: #F2EAC5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding: 0.5rem;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+body::-webkit-scrollbar {
+    width: 0.2rem;
+}
+body::-webkit-scrollbar-thumb {
+    color: #4C2215;
+}
+.grid-main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0fr 0.05fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    gap: 1rem;
+    height: 100vh;
+    width: 100wh;
+}
+
+.header {
+    color: #4C2215;
+    grid-column: span 3;
+
+}
+
+
+.logo {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+.welcome-text {
+    color: #4C2215;
+    grid-row: 2;
+    grid-column: span 3;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.Content-card {
+    grid-row: 3;
+    grid-column: span 3;
+}
+
+.Content-card-2 {
+    grid-row: 4;
+    grid-column: span 3;
+}
+
+.Content-card-3 {
+    grid-row: 5;
+    grid-column: span 3;
+
+}
+
+.link-1 {
+    
+    background-image: url(1.jpg);
+    
+
+}
+.link-2 {
+    background-image: url(2.jpg);
+    
+
+}
+.link-3 {
+    background-image: url(3.jpg);
+
+}
+.styling {
+    font-size: 1.5rem;
+    color: #F2EAC5;
+    text-decoration: none;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 1px black;
+}
+.footer {
+    grid-row: 6;
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+    align-items: center;
+}
+
+.social {
+    color: #4C2215;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+
+.heading {
+    color: #4C2215;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.paragraph {
+    color: #4C2215;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.07rem;
+}
+
+.content {
+    display: grid;
+}
+
+
+.topics, .topic-link {
+    color: #4C2215;
+    font-size: 1.2rem;
+}
+
+.topics, li {
+    margin: 1rem 0;
+}
+
