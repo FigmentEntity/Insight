@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <a href="">Content</a>
+    </div>
+
+
+    <div id="menuDemo">
+        <!--start CssMenu-->
+        <div class="menu-icon-wrapper">
+            <div class="menu-icon" onclick="toggleCssMenu(this)">
+                <div class="three-line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="cssmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="content.html" class="act">Content</a></li>
+                <li><a href="mailto: figmententity186@gmail.com" target="_blank">Contact</a></li>
+                <li><a href="https://www.youtube.com/channel/UC_1YeI1tlIPj5mbxjQ7kxYA" target="_blank">Youtube</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100091352157912" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+        <script>
+            function toggleCssMenu(icon) {
+                var cssmenu = document.getElementById('cssmenu');
+                if (icon.className.indexOf('active') == -1) {
+                    icon.className = 'menu-icon active';
+                    cssmenu.style.display = "block";
+                    setTimeout(function(){cssmenu.className = 'active';},0);            
+                }
+                else {
+                    icon.className = 'menu-icon';
+                    cssmenu.className = '';
+                    setTimeout(function(){cssmenu.style.display = "none";},411); 
+                }
+            }
+        </script>
+
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="Nihilism.html">Nihilism, the philosophy of despair.</a>
+                </li>
+            </ul>
+        </div>
+
+</body>
+</html>
